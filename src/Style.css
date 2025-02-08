@@ -1,0 +1,619 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.Neha {
+  color: white;
+}
+#Neha {
+  color: white;
+}
+/* Body styling */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Flexbox layout for Sidebar + Main Content */
+.flex {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+/* ─── Sidebar Styling ─── */
+.sidebar {
+  width: 250px;
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  position: fixed; /* Keeps sidebar fixed */
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Enables scrolling inside sidebar if needed */
+}
+
+/* Sidebar Profile Image */
+.sidebar img {
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid white;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Sidebar Navigation */
+.sidebar nav {
+  margin-top: 20px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0px;
+  text-align: left;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar nav a:hover {
+  background: #444;
+}
+
+/* Sidebar Description */
+.sidebar p {
+  text-align: center;
+  color: gray;
+  margin-bottom: 15px;
+}
+
+/* Sidebar Button */
+.sidebar button {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.sidebar button:hover {
+  background: gray;
+}
+
+/* ─── Main Content (Scrollable) ─── */
+.main-content {
+  margin-left: 250px; /* Offset content by sidebar width */
+  flex: 1;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto; /* Enables scrolling */
+  background-color: #f4f4f4;
+}
+
+/* Sections Styling */
+.section {
+  width: 1200px;
+  height: 650px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ─── Spotlight Effect (Optional) ─── */
+/* .light-container {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .light {
+  position: relative;
+  width: 50px;
+  height: 80px;
+} */
+/* 
+.light::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(20px);
+  border-radius: 50%;
+} */
+/* 
+.light img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* ─── Text Styling ─── */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+  font-size: 28px;
+  color: #222;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ─── Buttons Styling ─── */
+button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: darkblue;
+}
+
+/* ─── About Section Styling ─── */
+.about-container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h2,
+.about-container h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.about-container b {
+  color: #222;
+}
+
+/* ─── Responsive Design ─── */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    height: auto;
+  }
+}
+/* skills css */
+.skills-container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 18px; /* Space between columns */
+}
+.skill-name {
+  /* font-weight: bold; */
+  font-size: large;
+  margin: 4px;
+  /* margin-bottom: 100px; */
+}
+
+.progress-bar {
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  background: #007bff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Project css */
+
+.projects-container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.project-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-light {
+  background: #ddd;
+  color: black;
+}
+
+.btn-primary {
+  background: blue;
+  color: white;
+}
+
+/* Contacts css */
+.contact-container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-buttons {
+  margin-top: 10px;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #f5f5f5;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: #ddd;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Experiance css */
+
+.experience-container {
+  width: 1200px;
+  margin: auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.experience-card h3 {
+  margin: 0;
+  color: #333;
+}
+
+.duration {
+  color: #555;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Hero css */
+
+.hero-section {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: black; /* Dark background for neon effect */
+}
+
+/* Neon Light Bars */
+.neon-light {
+  position: absolute;
+  width: 15px;
+  height: 100%;
+  background: linear-gradient(to bottom, #00ffff, #0000ff);
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #0000ff;
+  animation: flicker 2s infinite alternate;
+}
+
+.neon-light.right {
+  right: 5%;
+  background: linear-gradient(to bottom, #ff00ff, #ff1493);
+  box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff1493;
+}
+
+.neon-light.left {
+  left: 5%;
+}
+
+/* Flickering Animation */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+.p {
+  color: white;
+}
+
+.hero-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  transform: scale(1.1);
+}
+
+/* Default Light Theme */
+.light-theme {
+  background: #f4f4f4;
+  color: black;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background: #121212;
+  color: white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Theme Toggle Button */
+.sidebar button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Adjustments */
+.dark-theme .sidebar {
+  background: #222;
+}
+
+.dark-theme .sidebar a {
+  color: #ddd;
+}
+
+.dark-theme .sidebar button {
+  background-color: #ffcc00;
+  color: black;
+}
+
+.dark-theme .sidebar button:hover {
+  background-color: #e6b800;
+}
+
+/* Default Light Theme */
+body.light-theme {
+  background: #f4f4f4;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background: #121212;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #1f1f1f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Theme Toggle Button */
+.sidebar button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+/* Dark Mode Adjustments */
+body.dark-theme .sidebar {
+  background: #222;
+}
+
+body.dark-theme .sidebar a {
+  color: #ddd;
+}
+
+body.dark-theme .sidebar button {
+  background-color: #ffcc00;
+  color: black;
+}
+
+body.dark-theme .sidebar button:hover {
+  background-color: #e6b800;
+}
+
+/* Light Effect in Dark Mode */
+body.dark-theme .light img {
+  filter: brightness(1.5);
+}
