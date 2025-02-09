@@ -1,37 +1,3 @@
-// import React from "react";
-// import "../Style.css"; // Import main CSS file
-
-// const About = () => {
-//   return (
-//     <section id="about" className="about-container">
-//       <h2>About Me</h2>
-//       <p>
-//         I am <b>Neha Patil</b>, a passionate <b>Full Stack Developer</b> with expertise in developing
-//         modern, responsive, and scalable web applications. With a <b>Bachelor’s degree in
-//         Electronics and Telecommunication</b> from <b>Mumbai University</b>, I developed a keen
-//         interest in software development and problem-solving.
-//       </p>
-//       <p>
-//         Currently, I am completing my <b>PG-DAC from C-DAC Kharghar</b>, gaining in-depth
-//         knowledge of full-stack development and emerging technologies.
-//       </p>
-//       <p>
-//         My core tech stack includes <b>ReactJS, Java, Spring Boot, MySQL</b>, and <b>.NET Core Web API</b>,
-//         ensuring I can build and maintain end-to-end solutions efficiently.
-//       </p>
-
-//       <h3>My Journey & Background</h3>
-//       <p>
-//         My journey into software development started with my strong analytical and problem-solving abilities.
-//         I developed a keen interest in <b>data structures, algorithms</b>, and <b>modern web frameworks</b>.
-//         With hands-on experience in multiple programming languages, I enjoy working on high-performance applications.
-//       </p>
-//     </section>
-//   );
-// };
-
-// export default About;
-
 import React from "react";
 import "../Style.css"; // Import main CSS file
 

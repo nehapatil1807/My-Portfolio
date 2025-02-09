@@ -31,7 +31,7 @@ const PortfolioPage = () => {
         <h2 className="Neha">Neha Patil</h2>
         <p id="Neha">Full Stack Developer</p>
         <nav>
-          <a href="#home">Home</a>
+          <a href="#hero">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
@@ -40,9 +40,9 @@ const PortfolioPage = () => {
         </nav>
 
         {/* Day/Night Mode Toggle Button */}
-        <button onClick={() => setDarkMode(!darkMode)}>
+        {/* <button onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? "Day 🌞" : "Night 🌙"}
-        </button>
+        </button> */}
       </aside>
 
       {/* Main Section (Scrollable) */}

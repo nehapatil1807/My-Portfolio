@@ -279,9 +279,8 @@ button:hover {
 }
 
 /* Project css */
-
 .projects-container {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding: 40px;
   background-color: #fff;
@@ -291,35 +290,61 @@ button:hover {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  justify-content: center;
+  /* width: 400px; */
 }
-
+.pp{
+  text-align: left;
+}
 .project-card {
+  width: 350px;
   background: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card.full-width {
+  grid-column: span 2;
+  height: 530px;
+  width: 350px;
+  /* margin: auto; */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
+  padding: 30px;
   width: 100%;
-  height: 150px;
+  height: 220px;
   object-fit: contain;
+  border-radius: 5px;
+  background-color: rgb(240, 236, 236);
 }
 
 .project-card h3 {
   margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .project-card p {
   font-size: 14px;
   color: #666;
+  margin-top: 8px;
 }
 
 .buttons {
   margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
@@ -327,18 +352,99 @@ button:hover {
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
-  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  text-align: center;
+  min-width: 80px; /* Ensures all buttons have the same width */
 }
 
 .btn-light {
+  /* margin-left: 320px; */
   background: #ddd;
   color: black;
+  border: none;
+}
+.btn-light1 {
+  /* margin-left: 320px; */
+  background: #ddd;
+  color: black;
+  border: none;
+}
+
+.btn-light:hover {
+  background: #bbb;
 }
 
 .btn-primary {
+  margin-right: 130px;
+  margin-top: 20px;
+  height: 35px;
   background: blue;
   color: white;
+  border: none;
 }
+.btn-primary1 {
+  /* margin-right: 30px; */
+  margin-top: 20px;
+  height: 35px;
+  background: blue;
+  color: white;
+  border: none;
+}
+.btn-primary:hover {
+  background: darkblue;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.modal-buttons .btn {
+  flex: 1; /* Makes both buttons equal width */
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+}
+
+.close-btn:hover {
+  color: black;
+}
+
 
 /* Contacts css */
 .contact-container {
@@ -374,6 +480,8 @@ button:hover {
   margin-top: 20px;
   font-size: 14px;
   color: #666;
+  text-align: center;
+  font-size: 18px;
 }
 
 /* Experiance css */
@@ -408,7 +516,9 @@ button:hover {
 /* Hero css */
 
 .hero-section {
-  width: 100%;
+  width: 1200px;
+  margin-left: 15px;
+  border-radius: 20px;
   height: 550px;
   display: flex;
   justify-content: center;
@@ -417,8 +527,9 @@ button:hover {
   color: white;
   font-family: Arial, sans-serif;
   position: relative;
-  overflow: hidden;
-  background: black; /* Dark background for neon effect */
+  overflow: hidden; 
+  background: linear-gradient(to right, #63d7f4, #f579d8);
+
 }
 
 /* Neon Light Bars */
@@ -426,19 +537,22 @@ button:hover {
   position: absolute;
   width: 15px;
   height: 100%;
-  background: linear-gradient(to bottom, #00ffff, #0000ff);
+  background: linear-gradient(to bottom, #00ffff, #00aaff);
   box-shadow: 0 0 15px #00ffff, 0 0 30px #0000ff;
   animation: flicker 2s infinite alternate;
 }
 
 .neon-light.right {
-  right: 5%;
+  right: 0.1%;
   background: linear-gradient(to bottom, #ff00ff, #ff1493);
   box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff1493;
 }
 
 .neon-light.left {
-  left: 5%;
+  left: 0.1%;
+}
+.h1{
+  font-size: 50px;
 }
 
 /* Flickering Animation */
@@ -463,8 +577,16 @@ button:hover {
 .p {
   color: white;
 }
+.view-work-button {
+  text-decoration: none; /* Remove underline */
+}
+.view-work-button:hover{
+  color: white;
+  background-color: #007bff;
+}
 
 .hero-button {
+  /* text-decoration: none; */
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -477,6 +599,8 @@ button:hover {
 
 .hero-button:hover {
   transform: scale(1.1);
+  color: white;
+  background-color: #007bff;
 }
 
 /* Default Light Theme */

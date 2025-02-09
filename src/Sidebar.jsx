@@ -12,7 +12,7 @@ const Sidebar = ({ toggleTheme, darkMode }) => {
       <nav>
         <ul>
           <li>
-            <a href="#home">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -33,9 +33,9 @@ const Sidebar = ({ toggleTheme, darkMode }) => {
       </nav>
 
       {/* Day/Night Theme Toggle Button */}
-      <button className="theme-toggle-sidebar" onClick={toggleTheme}>
+      {/* <button className="theme-toggle-sidebar" onClick={toggleTheme}>
         {darkMode ? "🌞 Day Mode" : "🌙 Night Mode"}
-      </button>
+      </button> */}
     </div>
   );
 };

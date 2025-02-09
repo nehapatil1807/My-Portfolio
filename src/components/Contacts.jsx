@@ -3,6 +3,7 @@ import "../Style.css"; // Ensure your CSS file is linked
 
 const Contact = () => {
   return (
+    <div>
     <section id="contact" className="contact-container">
       <h2>Contact</h2>
       <br />
@@ -17,7 +18,7 @@ const Contact = () => {
           📧 Email
         </a>
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
           target="_blank"
           rel="noopener noreferrer"
           className="btn contact-btn"
@@ -25,7 +26,7 @@ const Contact = () => {
           🔗 LinkedIn
         </a>
         <a
-          href="https://github.com/your-github"
+          href="https://github.com/"
           target="_blank"
           rel="noopener noreferrer"
           className="btn contact-btn"
@@ -33,8 +34,13 @@ const Contact = () => {
           🐙 GitHub
         </a>
       </div>
-      <p className="copyright">© 2025 Your Name. All rights reserved.</p>
+       
     </section>
+    <br/>
+    <p className="copyright">© 2025 Neha Patil. All rights reserved.</p>
+    <br/>
+    <br/>
+    </div>
   );
 };
 
