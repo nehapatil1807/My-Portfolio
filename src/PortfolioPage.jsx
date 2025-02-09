@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import "./Style.css"; // Import CSS file
+import "./Style.css";  
 import About from "./components/about";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contacts";
 import Experience from "./components/Experience";
 import Hero from "./components/Hero";
+import profileImage from "./profile.jpg";
 
 const PortfolioPage = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -24,10 +25,7 @@ const PortfolioPage = () => {
     <div>
       {/* Sidebar */}
       <aside className="sidebar">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCsqRYLAFDdL4Ix_AHai7kNVyoPV9Ssv1xg&s" // Corrected path
-          alt="Profile"
-        />
+      <img src={profileImage} alt="Profile" />
         <h2 className="Neha">Neha Patil</h2>
         <p id="Neha">Full Stack Developer</p>
         <nav>

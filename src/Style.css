@@ -295,7 +295,7 @@ button:hover {
   justify-content: center;
   /* width: 400px; */
 }
-.pp{
+.pp {
   text-align: left;
 }
 .project-card {
@@ -445,7 +445,6 @@ button:hover {
   color: black;
 }
 
-
 /* Contacts css */
 .contact-container {
   width: 1200px;
@@ -527,9 +526,8 @@ button:hover {
   color: white;
   font-family: Arial, sans-serif;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   background: linear-gradient(to right, #63d7f4, #f579d8);
-
 }
 
 /* Neon Light Bars */
@@ -551,7 +549,7 @@ button:hover {
 .neon-light.left {
   left: 0.1%;
 }
-.h1{
+.h1 {
   font-size: 50px;
 }
 
@@ -578,9 +576,10 @@ button:hover {
   color: white;
 }
 .view-work-button {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
+  color: white;
 }
-.view-work-button:hover{
+.view-work-button:hover {
   color: white;
   background-color: #007bff;
 }

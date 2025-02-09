@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-// import { FaMoon, FaSun, FaGithub, FaLinkedin } from "react-icons/fa";
-import PortfolioPage from "./PortfolioPage";
-// import About from "./components/about";
+import React, { useState } from "react"; 
+import PortfolioPage from "./PortfolioPage"; 
 
 const Portfolio = () => {
   return <PortfolioPage />;
