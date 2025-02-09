@@ -299,6 +299,7 @@ button:hover {
   text-align: left;
 }
 .project-card {
+  margin-left: 75px;
   width: 350px;
   background: white;
   border-radius: 8px;
@@ -309,7 +310,7 @@ button:hover {
 }
 
 .project-card.full-width {
-  grid-column: span 2;
+  grid-column: span 1;
   height: 530px;
   width: 350px;
   /* margin: auto; */

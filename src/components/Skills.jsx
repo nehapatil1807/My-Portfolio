@@ -5,7 +5,7 @@ const skills = [
   { name: "Java", percentage: 90 },
   { name: "Data Structures & Algorithms", percentage: 80 },
   { name: "React.js", percentage: 80 },
-  { name: "JavaScript", percentage: 85 },
+  { name: "JavaScript", percentage: 80 },
   { name: "REST APIs", percentage: 85 },
   { name: "C++", percentage: 80 },
   { name: "MySQL", percentage: 90 },
@@ -16,10 +16,14 @@ const skills = [
   { name: "HTML5", percentage: 95 },
   { name: "Spring Framework", percentage: 90 },
   { name: "ASP.NET Web API", percentage: 80 },
-  { name: "OOP", percentage: 85 },
-  { name: "MongoDB", percentage: 60 },
+  { name: "Amazon Web Service ( AWS )", percentage: 60 }, 
   { name: "CSS", percentage: 90 },
   { name: "Spring Boot", percentage: 90 },
+  { name: "Selenium Testing", percentage: 70 },
+  { name: "Hibernate", percentage: 85 },
+  { name: "ASP.NET MVC", percentage: 75 },
+  { name: "Git & GitHub", percentage: 85 },
+  { name: "Software Testing", percentage: 75 },
 ];
 
 const Skills = () => {

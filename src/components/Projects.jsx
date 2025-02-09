@@ -25,6 +25,14 @@ const projectsData = [
     image: pImage,
     details: "Elegant Jewellery is a full-stack e-commerce platform built with React for the front end, MySQL for the database, and .NET Core Web API for the backend. It offers a seamless and personalized shopping experience for luxury jewelry products, leveraging modern technologies to ensure scalability, security, and user satisfaction.",
     visitLink: "https://github.com/nehapatil1807/Elegant-E-Commerce-Platform-for-Jewelry-Products-/tree/main/DotNet-Project",
+  },
+  {
+    title: "🥗 MyOnlineMeal using HTML CSS",
+    description:
+      "The MyOnlineMeal Website Project is a beautifully designed website created to showcase a restaurant's offerings and ambiance. Built entirely using HTML and CSS, the platform provides an engaging user experience that highlights the restaurant's menu and contact information.",
+    image: "https://img.freepik.com/free-vector/retro-restaurant-logo_23-2148490227.jpg?semt=ais_hybrid",
+    details: "The Restaurant Website Project is a beautifully designed website created to showcase a restaurant's offerings and ambiance. Built entirely using HTML and CSS, the platform provides an engaging user experience that highlights the restaurant's menu and contact information.",
+    visitLink: "https://github.com/nehapatil1807/Restaurant-Website-",
   }
 ];
 
