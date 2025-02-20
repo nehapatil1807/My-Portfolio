@@ -17,7 +17,7 @@
 
 ## 📬 Contact Me
 📧 Email: [nehaspatil2002@gmail.com](https://mail.google.com/mail/?view=cm&to=nehaspatil2002@gmail.com)  
-💼 LinkedIn: [linkedin.com/in/your-profile](www.linkedin.com/in/neha-patil-584051323)  
+💼 LinkedIn: [linkedin.com](www.linkedin.com/in/neha-patil-584051323)  
 
 ---
 
